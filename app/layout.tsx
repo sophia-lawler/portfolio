@@ -1,18 +1,21 @@
 import './globals.css'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+interface Children {
+  children: React.ReactNode
+}
 
 export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode
-}) {
+}: Children) {
   return (
-    <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
+    <html>
       <head />
-      <body>{children}</body>
+      <body>
+        <Header/>
+        {children}
+        <Footer/>
+      </body>
     </html>
   )
 }
