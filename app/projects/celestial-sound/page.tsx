@@ -1,4 +1,4 @@
-export default function Pokedex() {
+export default function Sound() {
   return (
-    <h1>this is the Pokedex App wow!</h1>
+    <h1>this is the Sound App wow!</h1>
   )}
