@@ -16,6 +16,23 @@ main {
   -webkit-text-stroke-color: blue;
   text-align: center;
 }
+.enter {
+  padding: 20px;
+  margin: 300px;
+  font-size: 60pt;
+  color: blue;
+  font-family: Arial, Helvetica, sans-serif;
+  border-color: chartreuse;
+  border-style: double;
+  border-width: 3px;
+  background-color: white;
+  border-radius: 20px;
+}
+.landing {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
 .butterfly { 
   padding: 10px 10px 10px 10px;
   display: flex;
