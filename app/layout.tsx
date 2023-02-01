@@ -35,9 +35,12 @@ export default function RootLayout({ children }: Children) {
               options={particlesOptions as ISourceOptions}
               init={particlesInit} />
             <button className="enter" onClick={handleClick}>
-              {'  '}
-              ENTER SITE{'  '}
+             e n t e r  s i t e
             </button>
+            <ul className='rules'>
+            <li className='rule'>click to spawn </li>
+            <li className='rule'>hover to move </li>
+            </ul>
           </div>) 
         : (
           <>
