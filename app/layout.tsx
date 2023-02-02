@@ -27,22 +27,21 @@ export default function RootLayout({ children }: Children) {
     <html>
       <head />
       <body>
-        {!enter 
-        
-          ? (
-          <div className='landing'>
+        {!enter && window.location.pathname === '/' ? (
+          <div className="landing">
             <Particles
               options={particlesOptions as ISourceOptions}
-              init={particlesInit} />
+              init={particlesInit}
+            />
             <button className="enter" onClick={handleClick}>
-             e n t e r  s i t e
+              e n t e r s i t e
             </button>
-            <ul className='rules'>
-            <li className='rule'>click to spawn </li>
-            <li className='rule'>hover to move </li>
+            <ul className="rules">
+              <li className="rule">click to spawn </li>
+              <li className="rule">hover to move </li>
             </ul>
-          </div>) 
-        : (
+          </div>
+        ) : (
           <>
             <Header />
             {children}
