@@ -1,4 +1,4 @@
 export default function Dashboard() {
   return (
-    <h1>this is the Pokedex App wow!</h1>
+    <h1>this is the Chrome extension wow!</h1>
   )}
