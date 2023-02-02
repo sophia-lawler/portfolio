@@ -3,9 +3,9 @@ import Link from 'next/link'
 export default function Nav() {
   return (
     <div className="nav">
-    <Link className="nav-item" href="/projects"> /projects</Link>
-    <Link className="nav-item" href="/cv"> /cv</Link>
-    <Link className="nav-item" href="/"> /about</Link>
+      {['projects', 'cv', 'about'].map(nav =>  <Link key={nav} className="nav-item" href={`${nav}`} > /{nav}</Link>
+
+      )}
     </div>
   )
 }
