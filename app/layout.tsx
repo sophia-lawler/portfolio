@@ -23,11 +23,13 @@ export default function RootLayout({ children }: Children) {
     await loadFull(engine)
   }, [])
 
+  const url: string = window.location.pathname
+  
   return (
     <html>
       <head />
       <body>
-        {!enter && window.location.pathname === '/' ? (
+        {!enter && url === '/' ? (
           <div className="landing">
             <Particles
               options={particlesOptions as ISourceOptions}
